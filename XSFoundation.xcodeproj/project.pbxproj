@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		537DC0451CB7C13F0022D3BD /* XSTestShell */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 537DC0461CB7C1400022D3BD /* Build configuration list for PBXAggregateTarget "XSTestShell" */;
+			buildPhases = (
+				537DC0491CB7C1460022D3BD /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = XSTestShell;
+			productName = XSTestShell;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		095D28261BF5840600D2E300 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D28251BF5840600D2E300 /* main.m */; };
 		095D28291BF5840600D2E300 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 095D28281BF5840600D2E300 /* AppDelegate.m */; };
@@ -56,6 +70,10 @@
 		09B0A39B1BFB21FB00223DA1 /* PropertySelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39A1BFB21FB00223DA1 /* PropertySelector.m */; };
 		09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */; };
 		09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */; };
+		537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03C1CB796070022D3BD /* ExampleTests.m */; };
+		537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03E1CB7983E0022D3BD /* ExampleUITests.m */; };
+		537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC0411CB79F4B0022D3BD /* SpecialTests.m */; };
+		537DC0441CB7C0870022D3BD /* XCTest in Resources */ = {isa = PBXBuildFile; fileRef = 537DC0431CB7C0870022D3BD /* XCTest */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +181,11 @@
 		09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertySelector.xib; sourceTree = "<group>"; };
 		09B0A39E1BFB390600223DA1 /* PropertySelectorsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySelectorsView.h; sourceTree = "<group>"; };
 		09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertySelectorsView.m; sourceTree = "<group>"; };
+		537DC03C1CB796070022D3BD /* ExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
+		537DC03E1CB7983E0022D3BD /* ExampleUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
+		537DC0401CB79F4B0022D3BD /* SpecialTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialTests.h; sourceTree = "<group>"; };
+		537DC0411CB79F4B0022D3BD /* SpecialTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialTests.m; sourceTree = "<group>"; };
+		537DC0431CB7C0870022D3BD /* XCTest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XCTest; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +268,11 @@
 			isa = PBXGroup;
 			children = (
 				095D283E1BF5840600D2E300 /* XSFoundationTests.m */,
+				537DC03C1CB796070022D3BD /* ExampleTests.m */,
+				537DC0401CB79F4B0022D3BD /* SpecialTests.h */,
+				537DC0411CB79F4B0022D3BD /* SpecialTests.m */,
 				095D28401BF5840600D2E300 /* Info.plist */,
+				537DC0431CB7C0870022D3BD /* XCTest */,
 			);
 			path = XSFoundationTests;
 			sourceTree = "<group>";
@@ -254,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				095D28491BF5840600D2E300 /* XSFoundationUITests.m */,
+				537DC03E1CB7983E0022D3BD /* ExampleUITests.m */,
 				095D284B1BF5840600D2E300 /* Info.plist */,
 			);
 			path = XSFoundationUITests;
@@ -514,6 +542,9 @@
 						CreatedOnToolsVersion = 7.1;
 						TestTargetID = 095D28201BF5840600D2E300;
 					};
+					537DC0451CB7C13F0022D3BD = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 095D281C1BF5840600D2E300 /* Build configuration list for PBXProject "XSFoundation" */;
@@ -532,6 +563,7 @@
 				095D28201BF5840600D2E300 /* XSFoundation */,
 				095D28391BF5840600D2E300 /* XSFoundationTests */,
 				095D28441BF5840600D2E300 /* XSFoundationUITests */,
+				537DC0451CB7C13F0022D3BD /* XSTestShell */,
 			);
 		};
 /* End PBXProject section */
@@ -563,6 +595,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537DC0441CB7C0870022D3BD /* XCTest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +607,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		537DC0491CB7C1460022D3BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild test -project XSFoundation.xcodeproj -scheme XSFoundationTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'\n//-destination 'platform=OS X,arch=x86_64'\n//-destination 'platform=iOS,name=Development iPod touch'\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		095D281D1BF5840600D2E300 /* Sources */ = {
@@ -619,7 +668,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */,
 				095D283F1BF5840600D2E300 /* XSFoundationTests.m in Sources */,
+				537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -627,6 +678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */,
 				095D284A1BF5840600D2E300 /* XSFoundationUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -812,6 +864,20 @@
 			};
 			name = Release;
 		};
+		537DC0471CB7C1400022D3BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		537DC0481CB7C1400022D3BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -850,6 +916,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		537DC0461CB7C1400022D3BD /* Build configuration list for PBXAggregateTarget "XSTestShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				537DC0471CB7C1400022D3BD /* Debug */,
+				537DC0481CB7C1400022D3BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

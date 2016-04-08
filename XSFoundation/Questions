@@ -1,1 +1,35 @@
 日常遇到的待解决待完善问题列表：
+
+NSException *exception = [NSException exceptionWithName:NSInvalidArgumentException
+reason:@"The input_character parameter contains an unexpected value."
+userInfo:@{@"arg0": input_character}];
+[exception raise];
+
+
+2016-04-08 16:27:20.521 Calc[3872:215997] *** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: 'The input_character parameter contains an unexpected value.'
+*** First throw call stack:
+(
+0   CoreFoundation                      0x0000000102f76e65 __exceptionPreprocess + 165
+1   libobjc.A.dylib                     0x00000001029efdeb objc_exception_throw + 48
+2   CoreFoundation                      0x0000000102f76aa9 -[NSException raise] + 9
+3   Calc                                0x0000000100d7d905 -[Calculator input:] + 2597
+4   Calc                                0x0000000100d7cbdc -[iOS_CalcViewController press:] + 124
+5   UIKit                               0x00000001012a6194 -[UIApplication sendAction:to:from:forEvent:] + 92
+6   UIKit                               0x00000001014156fc -[UIControl sendAction:to:forEvent:] + 67
+7   UIKit                               0x00000001014159c8 -[UIControl _sendActionsForEvents:withEvent:] + 311
+8   UIKit                               0x0000000101414af8 -[UIControl touchesEnded:withEvent:] + 601
+9   UIKit                               0x000000010131549b -[UIWindow _sendTouchesForEvent:] + 835
+10  UIKit                               0x00000001013161d0 -[UIWindow sendEvent:] + 865
+11  UIKit                               0x00000001012c4b66 -[UIApplication sendEvent:] + 263
+12  UIKit                               0x000000010129ed97 _UIApplicationHandleEventQueue + 6844
+13  CoreFoundation                      0x0000000102ea2a31 __CFRUNLOOP_IS_CALLING_OUT_TO_A_SOURCE0_PERFORM_FUNCTION__ + 17
+14  CoreFoundation                      0x0000000102e9895c __CFRunLoopDoSources0 + 556
+15  CoreFoundation                      0x0000000102e97e13 __CFRunLoopRun + 867
+16  CoreFoundation                      0x0000000102e97828 CFRunLoopRunSpecific + 488
+17  GraphicsServices                    0x00000001051efad2 GSEventRunModal + 161
+18  UIKit                               0x00000001012a4610 UIApplicationMain + 171
+19  Calc                                0x0000000100d7c83f main + 111
+20  libdyld.dylib                       0x000000010416e92d start + 1
+21  ???                                 0x0000000000000001 0x0 + 1
+)
+libc++abi.dylib: terminating with uncaught exception of type NSException
