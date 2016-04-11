@@ -44,7 +44,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SimpleModel *model = [self.tableData objectAtIndex:indexPath.row];
-    BaseViewController *vc = [[NSClassFromString(model.data) alloc] init];
+    BaseViewController *vc = [[NSClassFromString(model.data) alloc] initWithNibName:model.data bundle:[NSBundle mainBundle]];
+    if (vc == nil) {
+        vc = [[NSClassFromString(model.data) alloc] init];
+    }
     /**
      *  隐藏Tabbar
      */

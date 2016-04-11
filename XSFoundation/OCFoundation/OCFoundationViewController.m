@@ -8,6 +8,7 @@
 
 #import "OCFoundationViewController.h"
 #import "NumberViewController.h"
+#import "UITestViewController.h"
 
 @interface OCFoundationViewController ()
 
@@ -23,6 +24,12 @@
         SimpleModel *model = [[SimpleModel alloc] init];
         model.title = @"String-->Price Number";
         model.data = NSStringFromClass([NumberViewController class]);
+        [self.tableData addObject:model];
+        
+        //最后一个
+        model = [[SimpleModel alloc] init];
+        model.title = @"UITest";
+        model.data = NSStringFromClass([UITestViewController class]);
         [self.tableData addObject:model];
     }
     return self;

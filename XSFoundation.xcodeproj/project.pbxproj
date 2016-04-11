@@ -74,6 +74,8 @@
 		537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03E1CB7983E0022D3BD /* ExampleUITests.m */; };
 		537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC0411CB79F4B0022D3BD /* SpecialTests.m */; };
 		537DC0441CB7C0870022D3BD /* XCTest in Resources */ = {isa = PBXBuildFile; fileRef = 537DC0431CB7C0870022D3BD /* XCTest */; };
+		53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC4A41CBB500C00B00590 /* UITestViewController.m */; };
+		53DDC4A71CBB500C00B00590 /* UITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC4A51CBB500C00B00590 /* UITestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -186,6 +188,9 @@
 		537DC0401CB79F4B0022D3BD /* SpecialTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialTests.h; sourceTree = "<group>"; };
 		537DC0411CB79F4B0022D3BD /* SpecialTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialTests.m; sourceTree = "<group>"; };
 		537DC0431CB7C0870022D3BD /* XCTest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XCTest; sourceTree = "<group>"; };
+		53DDC4A31CBB500C00B00590 /* UITestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestViewController.h; sourceTree = "<group>"; };
+		53DDC4A41CBB500C00B00590 /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
+		53DDC4A51CBB500C00B00590 /* UITestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +300,9 @@
 				098164871C2E65530077367D /* NumberViewController.h */,
 				098164881C2E65530077367D /* NumberViewController.m */,
 				098164891C2E65530077367D /* NumberViewController.xib */,
+				53DDC4A31CBB500C00B00590 /* UITestViewController.h */,
+				53DDC4A41CBB500C00B00590 /* UITestViewController.m */,
+				53DDC4A51CBB500C00B00590 /* UITestViewController.xib */,
 			);
 			path = OCFoundation;
 			sourceTree = "<group>";
@@ -579,6 +587,7 @@
 				09B0A38C1BFB115A00223DA1 /* 核心动画编程指南.pdf in Resources */,
 				095D28341BF5840600D2E300 /* LaunchScreen.storyboard in Resources */,
 				096C95431BFCD66F0070BF15 /* Quartz 2D programing 翻译.docx in Resources */,
+				53DDC4A71CBB500C00B00590 /* UITestViewController.xib in Resources */,
 				0981648B1C2E65530077367D /* NumberViewController.xib in Resources */,
 				09A123691BF9E2BE0084996F /* ReadMe in Resources */,
 				095D28311BF5840600D2E300 /* Assets.xcassets in Resources */,
@@ -636,6 +645,7 @@
 				095D28811BF5882200D2E300 /* UIFoundationViewController.m in Sources */,
 				09B0A3821BFB074700223DA1 /* CircleViewController.m in Sources */,
 				099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */,
+				53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */,
 				09B0A3831BFB074700223DA1 /* CoreAnimationUtil.m in Sources */,
 				095D287F1BF5882200D2E300 /* ThirdPartyViewController.m in Sources */,
 				095D287D1BF5882200D2E300 /* OCFoundationViewController.m in Sources */,
@@ -924,6 +934,7 @@
 				537DC0481CB7C1400022D3BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
