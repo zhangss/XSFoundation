@@ -15,6 +15,7 @@
  *
  *  官方例子：https://developer.apple.com/library/mac/samplecode/UnitTests/Introduction/Intro.html
  *  参考：http://www.tuicool.com/articles/jUrqiqR
+ *  参考：http://www.objccn.io/issue-15-2/
  */
 
 /**

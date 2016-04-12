@@ -11,7 +11,8 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 537DC0461CB7C1400022D3BD /* Build configuration list for PBXAggregateTarget "XSTestShell" */;
 			buildPhases = (
-				537DC0491CB7C1460022D3BD /* ShellScript */,
+				537DC0491CB7C1460022D3BD /* xcodebuild untiTest script */,
+				5382CD711CBBADB700C54D59 /* xcodebuild script */,
 			);
 			dependencies = (
 			);
@@ -70,6 +71,10 @@
 		09B0A39B1BFB21FB00223DA1 /* PropertySelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39A1BFB21FB00223DA1 /* PropertySelector.m */; };
 		09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */; };
 		09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */; };
+		536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */; };
+		536CC1C21CBCF21B00E4819C /* APPExistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */; };
+		536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */; };
+		536CC1C41CBCF21B00E4819C /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1C01CBCF21B00E4819C /* MyException.m */; };
 		537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03C1CB796070022D3BD /* ExampleTests.m */; };
 		537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03E1CB7983E0022D3BD /* ExampleUITests.m */; };
 		537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC0411CB79F4B0022D3BD /* SpecialTests.m */; };
@@ -183,6 +188,13 @@
 		09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertySelector.xib; sourceTree = "<group>"; };
 		09B0A39E1BFB390600223DA1 /* PropertySelectorsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySelectorsView.h; sourceTree = "<group>"; };
 		09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertySelectorsView.m; sourceTree = "<group>"; };
+		536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPExistViewController.h; sourceTree = "<group>"; };
+		536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPExistViewController.m; sourceTree = "<group>"; };
+		536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPExistViewController.xib; sourceTree = "<group>"; };
+		536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
+		536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAssertHandler.m; sourceTree = "<group>"; };
+		536CC1BF1CBCF21B00E4819C /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
+		536CC1C01CBCF21B00E4819C /* MyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyException.m; sourceTree = "<group>"; };
 		537DC03C1CB796070022D3BD /* ExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		537DC03E1CB7983E0022D3BD /* ExampleUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		537DC0401CB79F4B0022D3BD /* SpecialTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialTests.h; sourceTree = "<group>"; };
@@ -303,6 +315,7 @@
 				53DDC4A31CBB500C00B00590 /* UITestViewController.h */,
 				53DDC4A41CBB500C00B00590 /* UITestViewController.m */,
 				53DDC4A51CBB500C00B00590 /* UITestViewController.xib */,
+				536CC1B91CBCF21B00E4819C /* Exception */,
 			);
 			path = OCFoundation;
 			sourceTree = "<group>";
@@ -474,6 +487,20 @@
 			path = Gradient;
 			sourceTree = "<group>";
 		};
+		536CC1B91CBCF21B00E4819C /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */,
+				536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */,
+				536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */,
+				536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */,
+				536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */,
+				536CC1BF1CBCF21B00E4819C /* MyException.h */,
+				536CC1C01CBCF21B00E4819C /* MyException.m */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -592,6 +619,7 @@
 				09A123691BF9E2BE0084996F /* ReadMe in Resources */,
 				095D28311BF5840600D2E300 /* Assets.xcassets in Resources */,
 				09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */,
+				536CC1C21CBCF21B00E4819C /* APPExistViewController.xib in Resources */,
 				096C95421BFCD66F0070BF15 /* drawingwithquartz2d.pdf in Resources */,
 				09B0A38B1BFB115A00223DA1 /* CoreAnimation_guide.pdf in Resources */,
 				095D28821BF5882200D2E300 /* UIFoundationViewController.xib in Resources */,
@@ -618,18 +646,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		537DC0491CB7C1460022D3BD /* ShellScript */ = {
+		537DC0491CB7C1460022D3BD /* xcodebuild untiTest script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "xcodebuild untiTest script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "xcodebuild test -project XSFoundation.xcodeproj -scheme XSFoundationTests -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.3'\n//-destination 'platform=OS X,arch=x86_64'\n//-destination 'platform=iOS,name=Development iPod touch'\n\n";
+		};
+		5382CD711CBBADB700C54D59 /* xcodebuild script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "xcodebuild script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "//查询Xcode版本\nxcodebuild -version\n//查询当前系统SDK以及版本\nxcodebuild -showsdks\n//操作手册\nxcodebuild --help\n\n/**\n *  在工程文件所在目录执行\n */\n//显示工程项目信息\nxcodebuild -list\n\n/**\n *  编译工程\n */\n//清理\nxcodebulid -clean\n//编译 默认Release版本\nxcodebuild\n//Debug版本\nxcodebuild -configuration Debug\n//配置SDK\nxcodebuild -sdk {{sdkName}}\n//配置target\nxcodebuild -target {{targetName}}\n//配置scheme\nxcodebuild -scheme {{schemeName}}\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -642,13 +685,16 @@
 				095D28AD1BF5B1C000D2E300 /* UIColor+Extern.m in Sources */,
 				09B0A3871BFB074700223DA1 /* AnimateCollectionViewController.m in Sources */,
 				095D28A61BF5AEA800D2E300 /* BaseViewController.m in Sources */,
+				536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */,
 				095D28811BF5882200D2E300 /* UIFoundationViewController.m in Sources */,
 				09B0A3821BFB074700223DA1 /* CircleViewController.m in Sources */,
+				536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */,
 				099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */,
 				53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */,
 				09B0A3831BFB074700223DA1 /* CoreAnimationUtil.m in Sources */,
 				095D287F1BF5882200D2E300 /* ThirdPartyViewController.m in Sources */,
 				095D287D1BF5882200D2E300 /* OCFoundationViewController.m in Sources */,
+				536CC1C41CBCF21B00E4819C /* MyException.m in Sources */,
 				09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */,
 				095D28871BF5AC4300D2E300 /* MenuViewController.m in Sources */,
 				099A0DC61C3173CD00FFF08E /* HeaderView.m in Sources */,

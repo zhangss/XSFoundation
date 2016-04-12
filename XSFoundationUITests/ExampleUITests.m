@@ -10,6 +10,7 @@
 
 /**
  *  XCode7开始提供，可以测试UI
+ *  参考：http://www.jianshu.com/p/8bbec078cabe
  */
 
 /**
