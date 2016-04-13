@@ -7,6 +7,7 @@
 //
 
 #import "BaseTableViewController.h"
+#import "UIBarButtonItem+NaviItem.h"
 
 @interface BaseTableViewController ()
 
@@ -32,6 +33,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    /**
+     *  统一配置
+     *  1.背景色
+     *  2.LeftBtn
+     */
+    self.view.backgroundColor = Color_BG;
+    if (self.navigationController.childViewControllers.count > 1) {
+        [self defaultLeftBackButton];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,13 +50,40 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)defaultLeftBackButton {
+    UIImage *backImage = [UIImage imageNamed:@"nav_back_nor.png"];
+    UIBarButtonItem *leftBarItem = [UIBarButtonItem itemWidth:60
+                                                        image:backImage
+                                               imageHighlight:backImage
+                                                        title:nil
+                                                   titleColor:nil
+                                                       target:self
+                                                       action:@selector(leftBackButtonClicked)
+                                                       offset:CGPointMake(-23, 0)];
+    self.navigationItem.leftBarButtonItem = leftBarItem;
+}
+
+- (void)leftBackButtonClicked
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 #pragma mark -
 #pragma mark Table view data source
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SimpleModel *model = [self.tableData objectAtIndex:indexPath.row];
-    BaseViewController *vc = [[NSClassFromString(model.data) alloc] initWithNibName:model.data bundle:[NSBundle mainBundle]];
-    if (vc == nil) {
+    BaseViewController *vc = nil;
+    NSParameterAssert(model.data);
+    NSString *fileName = [model.data stringByAppendingPathExtension:@"nib"]; //不能用xib
+    NSString *xibPath = [[NSBundle mainBundle] pathForResource:fileName ofType:nil];
+    xibPath = [[NSBundle mainBundle] pathForResource:model.data ofType:@"nib"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:xibPath])
+    {
+        vc = [[NSClassFromString(model.data) alloc] initWithNibName:model.data bundle:[NSBundle mainBundle]];
+    }
+    else
+    {
         vc = [[NSClassFromString(model.data) alloc] init];
     }
     /**
@@ -78,7 +116,9 @@
     // Configure the cell...
     SimpleModel *model = [self.tableData objectAtIndex:indexPath.row];
     cell.textLabel.text = model.title;
-    
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.lineBreakMode = NSLineBreakByCharWrapping;
+    cell.textLabel.font = [UIFont systemFontOfSize:14];
     return cell;
 }
 

@@ -10,17 +10,4 @@
 
 @implementation MyException
 
-/**
- *  捕捉到异常之后弹出提示框
- */
-- (void)showExceptionAlert
-{
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"tips"
-                                                    message:self.reason
-                                                   delegate:nil
-                                          cancelButtonTitle:nil
-                                          otherButtonTitles:nil];
-    [alert show];
-}
-
 @end

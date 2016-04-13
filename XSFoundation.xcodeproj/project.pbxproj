@@ -71,8 +71,11 @@
 		09B0A39B1BFB21FB00223DA1 /* PropertySelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39A1BFB21FB00223DA1 /* PropertySelector.m */; };
 		09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */; };
 		09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */; };
+		530F006F1CBDEF9000798A9E /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F006E1CBDEF9000798A9E /* FileUtil.m */; };
+		530F00721CBE151600798A9E /* ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F00711CBE151600798A9E /* ExceptionHandler.m */; };
+		530F007C1CBE169700798A9E /* NSException+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007B1CBE169700798A9E /* NSException+Process.m */; };
+		530F007F1CBE23F800798A9E /* TypeDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007E1CBE23F800798A9E /* TypeDefine.m */; };
 		536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */; };
-		536CC1C21CBCF21B00E4819C /* APPExistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */; };
 		536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */; };
 		536CC1C41CBCF21B00E4819C /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1C01CBCF21B00E4819C /* MyException.m */; };
 		537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03C1CB796070022D3BD /* ExampleTests.m */; };
@@ -188,9 +191,16 @@
 		09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertySelector.xib; sourceTree = "<group>"; };
 		09B0A39E1BFB390600223DA1 /* PropertySelectorsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySelectorsView.h; sourceTree = "<group>"; };
 		09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertySelectorsView.m; sourceTree = "<group>"; };
+		530F006D1CBDEF9000798A9E /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
+		530F006E1CBDEF9000798A9E /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
+		530F00701CBE151600798A9E /* ExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionHandler.h; sourceTree = "<group>"; };
+		530F00711CBE151600798A9E /* ExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionHandler.m; sourceTree = "<group>"; };
+		530F007A1CBE169700798A9E /* NSException+Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Process.h"; sourceTree = "<group>"; };
+		530F007B1CBE169700798A9E /* NSException+Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Process.m"; sourceTree = "<group>"; };
+		530F007D1CBE23F800798A9E /* TypeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeDefine.h; sourceTree = "<group>"; };
+		530F007E1CBE23F800798A9E /* TypeDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeDefine.m; sourceTree = "<group>"; };
 		536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPExistViewController.h; sourceTree = "<group>"; };
 		536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPExistViewController.m; sourceTree = "<group>"; };
-		536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = APPExistViewController.xib; sourceTree = "<group>"; };
 		536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
 		536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAssertHandler.m; sourceTree = "<group>"; };
 		536CC1BF1CBCF21B00E4819C /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
@@ -398,6 +408,10 @@
 				095D28C71BF5D05200D2E300 /* UIDevice+Resolution.m */,
 				0981648C1C2E65CD0077367D /* NSNumber+Price.h */,
 				0981648D1C2E65CD0077367D /* NSNumber+Price.m */,
+				530F006D1CBDEF9000798A9E /* FileUtil.h */,
+				530F006E1CBDEF9000798A9E /* FileUtil.m */,
+				530F007D1CBE23F800798A9E /* TypeDefine.h */,
+				530F007E1CBE23F800798A9E /* TypeDefine.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -492,11 +506,14 @@
 			children = (
 				536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */,
 				536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */,
-				536CC1BC1CBCF21B00E4819C /* APPExistViewController.xib */,
 				536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */,
 				536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */,
 				536CC1BF1CBCF21B00E4819C /* MyException.h */,
 				536CC1C01CBCF21B00E4819C /* MyException.m */,
+				530F007A1CBE169700798A9E /* NSException+Process.h */,
+				530F007B1CBE169700798A9E /* NSException+Process.m */,
+				530F00701CBE151600798A9E /* ExceptionHandler.h */,
+				530F00711CBE151600798A9E /* ExceptionHandler.m */,
 			);
 			path = Exception;
 			sourceTree = "<group>";
@@ -619,7 +636,6 @@
 				09A123691BF9E2BE0084996F /* ReadMe in Resources */,
 				095D28311BF5840600D2E300 /* Assets.xcassets in Resources */,
 				09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */,
-				536CC1C21CBCF21B00E4819C /* APPExistViewController.xib in Resources */,
 				096C95421BFCD66F0070BF15 /* drawingwithquartz2d.pdf in Resources */,
 				09B0A38B1BFB115A00223DA1 /* CoreAnimation_guide.pdf in Resources */,
 				095D28821BF5882200D2E300 /* UIFoundationViewController.xib in Resources */,
@@ -691,6 +707,7 @@
 				536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */,
 				099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */,
 				53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */,
+				530F007C1CBE169700798A9E /* NSException+Process.m in Sources */,
 				09B0A3831BFB074700223DA1 /* CoreAnimationUtil.m in Sources */,
 				095D287F1BF5882200D2E300 /* ThirdPartyViewController.m in Sources */,
 				095D287D1BF5882200D2E300 /* OCFoundationViewController.m in Sources */,
@@ -699,13 +716,16 @@
 				095D28871BF5AC4300D2E300 /* MenuViewController.m in Sources */,
 				099A0DC61C3173CD00FFF08E /* HeaderView.m in Sources */,
 				095D28B51BF5C0FE00D2E300 /* SimpleModel.m in Sources */,
+				530F006F1CBDEF9000798A9E /* FileUtil.m in Sources */,
 				095D28291BF5840600D2E300 /* AppDelegate.m in Sources */,
 				09B0A3971BFB1F9F00223DA1 /* GradientViewController.m in Sources */,
 				095D28CB1BF5D21200D2E300 /* UIBarButtonItem+NaviItem.m in Sources */,
 				095D28B11BF5BFC900D2E300 /* BaseTableViewController.m in Sources */,
 				095D28261BF5840600D2E300 /* main.m in Sources */,
+				530F00721CBE151600798A9E /* ExceptionHandler.m in Sources */,
 				09B0A3861BFB074700223DA1 /* ADTickerLabel.m in Sources */,
 				09B0A37E1BFB074700223DA1 /* AnimationViewController.m in Sources */,
+				530F007F1CBE23F800798A9E /* TypeDefine.m in Sources */,
 				095D28AA1BF5B09F00D2E300 /* UIUtil.m in Sources */,
 				096F93CA1C042F9B00ED87F6 /* QuartZView.m in Sources */,
 				095D28A51BF5AEA800D2E300 /* BaseNavigationViewController.m in Sources */,

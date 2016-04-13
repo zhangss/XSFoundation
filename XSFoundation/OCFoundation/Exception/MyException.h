@@ -15,6 +15,4 @@
 
 @interface MyException : NSException
 
-- (void)showExceptionAlert;
-
 @end
