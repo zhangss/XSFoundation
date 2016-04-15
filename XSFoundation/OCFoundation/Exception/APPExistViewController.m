@@ -581,7 +581,8 @@
 //                label.text = @"test";
 //                [self.view addSubview:label];
 //            } while (YES);
-            
+            //TODO:被除数为0崩溃
+            CGFloat x = 100.0/0;
             break;
         }
         default:

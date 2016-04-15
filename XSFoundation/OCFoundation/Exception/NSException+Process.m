@@ -74,12 +74,12 @@
     NSString *exceptionFileName = [NSString stringWithFormat:@"%@_%@",self.name,[NSDate date]];
     NSString *exceptionFilePath = nil;
     
-    NSString *documentPath = [FileUtil documentPath];
+    NSString *documentPath = [FileUtil documentsPath];
     NSString *crashPath = [documentPath stringByAppendingPathComponent:@"crash"];
-    if ([FileUtil createDirectory:crashPath])
+    if ([FileUtil createDirectoryAtPath:crashPath])
     {
         NSString *versionPath = [crashPath stringByAppendingPathComponent:appVersion];
-        if ([FileUtil createDirectory:versionPath])
+        if ([FileUtil createDirectoryAtPath:versionPath])
         {
             exceptionFilePath = [versionPath stringByAppendingPathComponent:exceptionFileName];
         }

@@ -75,6 +75,8 @@
 		530F00721CBE151600798A9E /* ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F00711CBE151600798A9E /* ExceptionHandler.m */; };
 		530F007C1CBE169700798A9E /* NSException+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007B1CBE169700798A9E /* NSException+Process.m */; };
 		530F007F1CBE23F800798A9E /* TypeDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007E1CBE23F800798A9E /* TypeDefine.m */; };
+		53153BD71CC0896D00A84207 /* FileUtilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53153BD61CC0896D00A84207 /* FileUtilTest.m */; };
+		53153BDA1CC0FCC600A84207 /* MyError.m in Sources */ = {isa = PBXBuildFile; fileRef = 53153BD91CC0FCC600A84207 /* MyError.m */; };
 		536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */; };
 		536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */; };
 		536CC1C41CBCF21B00E4819C /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1C01CBCF21B00E4819C /* MyException.m */; };
@@ -82,6 +84,7 @@
 		537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03E1CB7983E0022D3BD /* ExampleUITests.m */; };
 		537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC0411CB79F4B0022D3BD /* SpecialTests.m */; };
 		537DC0441CB7C0870022D3BD /* XCTest in Resources */ = {isa = PBXBuildFile; fileRef = 537DC0431CB7C0870022D3BD /* XCTest */; };
+		53B04BA11CBE4E2B00FDA34E /* CrashHandeler.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */; };
 		53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC4A41CBB500C00B00590 /* UITestViewController.m */; };
 		53DDC4A71CBB500C00B00590 /* UITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC4A51CBB500C00B00590 /* UITestViewController.xib */; };
 /* End PBXBuildFile section */
@@ -199,6 +202,9 @@
 		530F007B1CBE169700798A9E /* NSException+Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Process.m"; sourceTree = "<group>"; };
 		530F007D1CBE23F800798A9E /* TypeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeDefine.h; sourceTree = "<group>"; };
 		530F007E1CBE23F800798A9E /* TypeDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeDefine.m; sourceTree = "<group>"; };
+		53153BD61CC0896D00A84207 /* FileUtilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtilTest.m; sourceTree = "<group>"; };
+		53153BD81CC0FCC600A84207 /* MyError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyError.h; sourceTree = "<group>"; };
+		53153BD91CC0FCC600A84207 /* MyError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyError.m; sourceTree = "<group>"; };
 		536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPExistViewController.h; sourceTree = "<group>"; };
 		536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPExistViewController.m; sourceTree = "<group>"; };
 		536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
@@ -210,6 +216,8 @@
 		537DC0401CB79F4B0022D3BD /* SpecialTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialTests.h; sourceTree = "<group>"; };
 		537DC0411CB79F4B0022D3BD /* SpecialTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialTests.m; sourceTree = "<group>"; };
 		537DC0431CB7C0870022D3BD /* XCTest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XCTest; sourceTree = "<group>"; };
+		53B04B9F1CBE4E2B00FDA34E /* CrashHandeler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHandeler.h; sourceTree = "<group>"; };
+		53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashHandeler.m; sourceTree = "<group>"; };
 		53DDC4A31CBB500C00B00590 /* UITestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestViewController.h; sourceTree = "<group>"; };
 		53DDC4A41CBB500C00B00590 /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
 		53DDC4A51CBB500C00B00590 /* UITestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITestViewController.xib; sourceTree = "<group>"; };
@@ -298,6 +306,7 @@
 				537DC03C1CB796070022D3BD /* ExampleTests.m */,
 				537DC0401CB79F4B0022D3BD /* SpecialTests.h */,
 				537DC0411CB79F4B0022D3BD /* SpecialTests.m */,
+				53153BD61CC0896D00A84207 /* FileUtilTest.m */,
 				095D28401BF5840600D2E300 /* Info.plist */,
 				537DC0431CB7C0870022D3BD /* XCTest */,
 			);
@@ -325,6 +334,7 @@
 				53DDC4A31CBB500C00B00590 /* UITestViewController.h */,
 				53DDC4A41CBB500C00B00590 /* UITestViewController.m */,
 				53DDC4A51CBB500C00B00590 /* UITestViewController.xib */,
+				53B04B9E1CBE4E0300FDA34E /* Crash */,
 				536CC1B91CBCF21B00E4819C /* Exception */,
 			);
 			path = OCFoundation;
@@ -510,12 +520,23 @@
 				536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */,
 				536CC1BF1CBCF21B00E4819C /* MyException.h */,
 				536CC1C01CBCF21B00E4819C /* MyException.m */,
+				53153BD81CC0FCC600A84207 /* MyError.h */,
+				53153BD91CC0FCC600A84207 /* MyError.m */,
 				530F007A1CBE169700798A9E /* NSException+Process.h */,
 				530F007B1CBE169700798A9E /* NSException+Process.m */,
 				530F00701CBE151600798A9E /* ExceptionHandler.h */,
 				530F00711CBE151600798A9E /* ExceptionHandler.m */,
 			);
 			path = Exception;
+			sourceTree = "<group>";
+		};
+		53B04B9E1CBE4E0300FDA34E /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				53B04B9F1CBE4E2B00FDA34E /* CrashHandeler.h */,
+				53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */,
+			);
+			path = Crash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -703,6 +724,7 @@
 				095D28A61BF5AEA800D2E300 /* BaseViewController.m in Sources */,
 				536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */,
 				095D28811BF5882200D2E300 /* UIFoundationViewController.m in Sources */,
+				53153BDA1CC0FCC600A84207 /* MyError.m in Sources */,
 				09B0A3821BFB074700223DA1 /* CircleViewController.m in Sources */,
 				536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */,
 				099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */,
@@ -733,6 +755,7 @@
 				09B0A3811BFB074700223DA1 /* CircleView.m in Sources */,
 				095D28CE1BF5D42100D2E300 /* SegmentWithColorSlider.m in Sources */,
 				096F93CB1C042F9B00ED87F6 /* QuartZViewController.m in Sources */,
+				53B04BA11CBE4E2B00FDA34E /* CrashHandeler.m in Sources */,
 				095D28C81BF5D05200D2E300 /* UIDevice+Resolution.m in Sources */,
 				095D28991BF5AE7F00D2E300 /* UITabBarItem+Custom.m in Sources */,
 				0981648A1C2E65530077367D /* NumberViewController.m in Sources */,
@@ -747,6 +770,7 @@
 				537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */,
 				095D283F1BF5840600D2E300 /* XSFoundationTests.m in Sources */,
 				537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */,
+				53153BD71CC0896D00A84207 /* FileUtilTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
