@@ -1,17 +1,17 @@
 //
-//  FileUtil.h
+//  FileManager.h
 //  XSFoundation
 //
-//  Created by 张松松 on 16/4/13.
+//  Created by 张松松 on 16/4/18.
 //  Copyright © 2016年 com.zhangss.foundation. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 /**
- *  文件操作相关
+ *  文件操作相关学习
  *
- *  TODO:文件属性、链接、回调还没涉及
+ *  TODO:链接还没涉及
  *
  *  官方：https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/Introduction/Introduction.html
  */
@@ -32,7 +32,7 @@
  /Users/YiSheng/Library/Developer/CoreSimulator/Devices/710F5160-D2DE-4DD8-9EA8-22A1542EFEF3/data/Containers/Data/Application/05E83E91-8723-4D5D-8960-93750F20431F
  */
 
-@interface FileUtil : NSObject
+@interface FileManager : NSObject
 
 #pragma mark - Main Path -
 /**
@@ -43,7 +43,7 @@
 + (NSString *)rootPath;
 
 /**
- *  APP的根目录
+ *  APP的根目录 ~
  *
  *  @return
  */
@@ -99,7 +99,7 @@
  *
  *  @param path 不能为空
  *
- *  @return 
+ *  @return
  */
 + (BOOL)createDirectoryAtPath:(NSString *)path;
 
@@ -134,13 +134,14 @@
 
 #pragma mark MODIFY
 /**
- *  修改当前操作的目录
- *  开发人员不应该主动调用此方法，一般应由defaultManager负责控制。
+ *  获取/修改当前操作的目录
+ *  开发人员不推荐主动调用修改方法，一般应由defaultManager负责控制。
  *
  *  @param path
  *
  *  @return
  */
++ (NSString *)currentDirectoryPath;
 + (BOOL)changeCurrentDirectoryPath:(NSString *)path;
 
 /**
@@ -158,12 +159,14 @@
 
 /**
  *  把srcPath内容移动到dstPath
- *  包含重命名功能，移动到当前目录修改名称即可
+ *  dstPath必须包含目标文件/目录名，该名字为拷贝之后的文件/目录名称
+ *  srcPath不存在会报错
+ *  dstPath已存在会报错，不会覆盖
  *
  *  @param srcPath 不能为nil
  *  @param dstPath 不能为nil
  *
- *  @return 
+ *  @return
  */
 + (BOOL)moveItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath;
 
@@ -173,7 +176,7 @@
  *  @param srcPath 不能为nil
  *  @param dstPath 不能为nil
  *
- *  @return 
+ *  @return
  */
 + (BOOL)linkItemAtPath:(NSString *)srcPath toPath:(NSString *)dstPath;
 
@@ -205,6 +208,7 @@
  */
 + (BOOL)fileExistsAtPathIsDirectory:(NSString *)path;
 + (BOOL)fileExistsAtPathIsFile:(NSString *)path;
++ (BOOL)isDirectory:(NSString *)path;
 
 /**
  *  是否存在文件/目录
@@ -214,7 +218,80 @@
  *
  *  @return
  */
-+ (BOOL)fileExistsAtPath:(NSString *)filePath;
++ (BOOL)fileExistsAtPath:(NSString *)path;
 
+/**
+ *  文件/目录的读/写/执行/删除权限判断
+ *  文件/目录不存在，认为NO
+ *
+ *  @param path
+ *
+ *  @return
+ */
++ (BOOL)isReadableFileAtPath:(NSString *)path;
++ (BOOL)isWritableFileAtPath:(NSString *)path;
++ (BOOL)isExecutableFileAtPath:(NSString *)path;
++ (BOOL)isDeletableFileAtPath:(NSString *)path;
+
+/**
+ *  文件/目录的显示名称
+ *  不对path的存在性做校验
+ *
+ *  @param path
+ *
+ *  @return
+ */
++ (NSString *)displayNameAtPath:(NSString *)path;
+
+/**
+ *  从根目录开始，所有的目录组件名称
+ *
+ *  @param path
+ *
+ *  @return
+ */
++ (NSArray<NSString *> *)componentsToDisplayForPath:(NSString *)path;
+
+#pragma mark - Attributes -
+/**
+ *  获取文件/目录的属性列表
+ *  提供文件/目录的创建时间、修改时间、大小、类型等
+ *
+ *  @param filePath
+ *
+ *  @return
+ */
++ (NSDictionary<NSString *, id> *)attributesOfItemAtPath:(NSString *)filePath;
+
+/**
+ *  获取目录所属的文件系统属性
+ *  获取文件系统的大小，剩余空间
+ *
+ *  @param filePath
+ *
+ *  @return
+ */
++ (NSDictionary<NSString *, id> *)attributesOfFileSystemForPath:(NSString *)filePath;
+
+/**
+ *  修改文件/目录属性
+ *  可修改属性常用的为：创建\修改时间、是否显示后缀、是否繁忙、是否可变更、所属用户\用户组等
+ *
+ *  @param attributes
+ *  @param filePath
+ *
+ *  @return
+ */
++ (BOOL)setAttributes:(NSDictionary<NSString *, id> *)attributes :(NSString *)filePath;
+
+#pragma mark - NSFileManagerDelegate -
+/**
+ *  FM的回调相关
+ *
+ *  @param delegate
+ *
+ *  @return
+ */
++ (NSFileManager *)fileManagerWithDelegate:(id <NSFileManagerDelegate>)delegate;
 
 @end

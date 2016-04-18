@@ -76,10 +76,14 @@
     
     NSString *documentPath = [FileUtil documentsPath];
     NSString *crashPath = [documentPath stringByAppendingPathComponent:@"crash"];
-    if ([FileUtil createDirectoryAtPath:crashPath])
+    if ([[NSFileManager defaultManager] createDirectoryAtPath:crashPath
+                                  withIntermediateDirectories:YES
+                                                   attributes:nil error:nil])
     {
         NSString *versionPath = [crashPath stringByAppendingPathComponent:appVersion];
-        if ([FileUtil createDirectoryAtPath:versionPath])
+        if ([[NSFileManager defaultManager] createDirectoryAtPath:versionPath
+                                      withIntermediateDirectories:YES
+                                                       attributes:nil error:nil])
         {
             exceptionFilePath = [versionPath stringByAppendingPathComponent:exceptionFileName];
         }
