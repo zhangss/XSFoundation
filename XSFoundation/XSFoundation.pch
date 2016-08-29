@@ -33,6 +33,8 @@
  */
 #import "UIUtil.h"
 #import "FileUtil.h"
+#import "FileManager.h"
+#import "XSConfig.h"
 /**
  *  Animate/Layer
  */

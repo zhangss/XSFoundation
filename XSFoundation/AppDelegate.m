@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MenuViewController.h"
+#import "JSPatchManager.h"
 
 @interface AppDelegate ()
 
@@ -22,6 +23,13 @@
     
     //UI
     [self initMainUI];
+    
+#ifdef JSPatchFramework
+    [JSPatchManager start];
+    [JSPatchManager sync];
+#elif JSPatchFrameworkTest
+    [JSPatchManager testScriptInBundle];
+#endif
     
     return YES;
 }

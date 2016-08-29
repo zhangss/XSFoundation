@@ -1,0 +1,19 @@
+开源链接：
+https://github.com/bang590/JSPatch
+framework介绍
+http://jspatch.com/Docs/intro
+
+接入
+1.项目添加JSPatch.framwork
+2.添加依赖框架：TARGETS -> Build Phases -> Link Binary With Libraries -> + 添加
+     libz.dylib
+     JavaScriptCore.framework
+3.添加代码：
+#import <JSPatch/JSPatch.h>
+@implementation AppDelegate
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+[JSPatch startWithAppKey:@"你的AppKey"];
+[JSPatch sync];
+...
+}
+@end

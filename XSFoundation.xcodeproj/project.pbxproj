@@ -49,8 +49,6 @@
 		096C95451BFCD6F60070BF15 /* ReadMe in Resources */ = {isa = PBXBuildFile; fileRef = 096C95441BFCD6F60070BF15 /* ReadMe */; };
 		096F93CA1C042F9B00ED87F6 /* QuartZView.m in Sources */ = {isa = PBXBuildFile; fileRef = 096F93C71C042F9B00ED87F6 /* QuartZView.m */; };
 		096F93CB1C042F9B00ED87F6 /* QuartZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096F93C91C042F9B00ED87F6 /* QuartZViewController.m */; };
-		0981648A1C2E65530077367D /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 098164881C2E65530077367D /* NumberViewController.m */; };
-		0981648B1C2E65530077367D /* NumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 098164891C2E65530077367D /* NumberViewController.xib */; };
 		0981648E1C2E65CD0077367D /* NSNumber+Price.m in Sources */ = {isa = PBXBuildFile; fileRef = 0981648D1C2E65CD0077367D /* NSNumber+Price.m */; };
 		099A0DC61C3173CD00FFF08E /* HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 099A0DC51C3173CD00FFF08E /* HeaderView.m */; };
 		099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099A0DC81C31740C00FFF08E /* TableHeaderViewController.m */; };
@@ -71,23 +69,38 @@
 		09B0A39B1BFB21FB00223DA1 /* PropertySelector.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39A1BFB21FB00223DA1 /* PropertySelector.m */; };
 		09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */; };
 		09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */; };
-		530F00721CBE151600798A9E /* ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F00711CBE151600798A9E /* ExceptionHandler.m */; };
-		530F007C1CBE169700798A9E /* NSException+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007B1CBE169700798A9E /* NSException+Process.m */; };
 		530F007F1CBE23F800798A9E /* TypeDefine.m in Sources */ = {isa = PBXBuildFile; fileRef = 530F007E1CBE23F800798A9E /* TypeDefine.m */; };
 		53153BD71CC0896D00A84207 /* FileManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53153BD61CC0896D00A84207 /* FileManagerTest.m */; };
-		53153BDA1CC0FCC600A84207 /* MyError.m in Sources */ = {isa = PBXBuildFile; fileRef = 53153BD91CC0FCC600A84207 /* MyError.m */; };
 		53392EC01CC4F26300FC371D /* FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53392EBD1CC4F26300FC371D /* FileManager.m */; };
 		53392EC11CC4F26300FC371D /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 53392EBF1CC4F26300FC371D /* FileUtil.m */; };
-		536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */; };
-		536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */; };
-		536CC1C41CBCF21B00E4819C /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 536CC1C01CBCF21B00E4819C /* MyException.m */; };
+		53670EB61CCA0B0C000DE96B /* Question in Resources */ = {isa = PBXBuildFile; fileRef = 53670EB51CCA0B0C000DE96B /* Question */; };
+		53670EB91CCA0E8A000DE96B /* Algorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = 53670EB81CCA0E8A000DE96B /* Algorithm.m */; };
+		53670EBD1CCA190B000DE96B /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53670EBC1CCA190B000DE96B /* JavaScriptCore.framework */; };
+		53670EC01CCA193F000DE96B /* JSPatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53670EBF1CCA193F000DE96B /* JSPatch.framework */; };
+		53670EC21CCA1959000DE96B /* ReadMe_JSPatch in Resources */ = {isa = PBXBuildFile; fileRef = 53670EC11CCA1959000DE96B /* ReadMe_JSPatch */; };
+		53670EC41CCA19E8000DE96B /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 53670EC31CCA19E8000DE96B /* libz.tbd */; };
+		53670ECA1CCA1AEE000DE96B /* JSPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53670EC91CCA1AEE000DE96B /* JSPatchManager.m */; };
+		53670ECC1CCA1E05000DE96B /* main.js in Resources */ = {isa = PBXBuildFile; fileRef = 53670ECB1CCA1E05000DE96B /* main.js */; };
 		537DC03D1CB796070022D3BD /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03C1CB796070022D3BD /* ExampleTests.m */; };
 		537DC03F1CB7983E0022D3BD /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC03E1CB7983E0022D3BD /* ExampleUITests.m */; };
 		537DC0421CB79F4B0022D3BD /* SpecialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 537DC0411CB79F4B0022D3BD /* SpecialTests.m */; };
 		537DC0441CB7C0870022D3BD /* XCTest in Resources */ = {isa = PBXBuildFile; fileRef = 537DC0431CB7C0870022D3BD /* XCTest */; };
-		53B04BA11CBE4E2B00FDA34E /* CrashHandeler.m in Sources */ = {isa = PBXBuildFile; fileRef = 53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */; };
-		53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53DDC4A41CBB500C00B00590 /* UITestViewController.m */; };
-		53DDC4A71CBB500C00B00590 /* UITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53DDC4A51CBB500C00B00590 /* UITestViewController.xib */; };
+		538C667C1D74164D00C2E1FC /* NumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C667A1D74164D00C2E1FC /* NumberViewController.m */; };
+		538C667D1D74164D00C2E1FC /* NumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538C667B1D74164D00C2E1FC /* NumberViewController.xib */; };
+		538C66901D74169300C2E1FC /* CrashHandeler.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66811D74169300C2E1FC /* CrashHandeler.m */; };
+		538C66911D74169300C2E1FC /* APPExistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66841D74169300C2E1FC /* APPExistViewController.m */; };
+		538C66921D74169300C2E1FC /* ExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66861D74169300C2E1FC /* ExceptionHandler.m */; };
+		538C66931D74169300C2E1FC /* MyAssertHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66881D74169300C2E1FC /* MyAssertHandler.m */; };
+		538C66941D74169300C2E1FC /* MyError.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C668A1D74169300C2E1FC /* MyError.m */; };
+		538C66951D74169300C2E1FC /* MyException.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C668C1D74169300C2E1FC /* MyException.m */; };
+		538C66971D74169300C2E1FC /* NSException+Process.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C668F1D74169300C2E1FC /* NSException+Process.m */; };
+		538C66A11D7416D500C2E1FC /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C669F1D7416D500C2E1FC /* UITestViewController.m */; };
+		538C66A21D7416D500C2E1FC /* UITestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538C66A01D7416D500C2E1FC /* UITestViewController.xib */; };
+		538C66A51D74172A00C2E1FC /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66A41D74172A00C2E1FC /* ImageViewController.m */; };
+		538C66A81D7417E800C2E1FC /* ImageCompressionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66A71D7417E800C2E1FC /* ImageCompressionViewController.m */; };
+		538C66AA1D7419B300C2E1FC /* ImageCompressionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538C66A91D7419B300C2E1FC /* ImageCompressionViewController.xib */; };
+		538C66AD1D741B8500C2E1FC /* XSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66AC1D741B8500C2E1FC /* XSConfig.m */; };
+		538C66B01D74229200C2E1FC /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66AF1D74229200C2E1FC /* DataUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,9 +172,6 @@
 		096F93C71C042F9B00ED87F6 /* QuartZView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartZView.m; sourceTree = "<group>"; };
 		096F93C81C042F9B00ED87F6 /* QuartZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartZViewController.h; sourceTree = "<group>"; };
 		096F93C91C042F9B00ED87F6 /* QuartZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartZViewController.m; sourceTree = "<group>"; };
-		098164871C2E65530077367D /* NumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberViewController.h; sourceTree = "<group>"; };
-		098164881C2E65530077367D /* NumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
-		098164891C2E65530077367D /* NumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberViewController.xib; sourceTree = "<group>"; };
 		0981648C1C2E65CD0077367D /* NSNumber+Price.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Price.h"; sourceTree = "<group>"; };
 		0981648D1C2E65CD0077367D /* NSNumber+Price.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Price.m"; sourceTree = "<group>"; };
 		099A0DC41C3173CD00FFF08E /* HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderView.h; sourceTree = "<group>"; };
@@ -195,35 +205,57 @@
 		09B0A39C1BFB239A00223DA1 /* PropertySelector.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertySelector.xib; sourceTree = "<group>"; };
 		09B0A39E1BFB390600223DA1 /* PropertySelectorsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertySelectorsView.h; sourceTree = "<group>"; };
 		09B0A39F1BFB390600223DA1 /* PropertySelectorsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertySelectorsView.m; sourceTree = "<group>"; };
-		530F00701CBE151600798A9E /* ExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionHandler.h; sourceTree = "<group>"; };
-		530F00711CBE151600798A9E /* ExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionHandler.m; sourceTree = "<group>"; };
-		530F007A1CBE169700798A9E /* NSException+Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Process.h"; sourceTree = "<group>"; };
-		530F007B1CBE169700798A9E /* NSException+Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Process.m"; sourceTree = "<group>"; };
 		530F007D1CBE23F800798A9E /* TypeDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeDefine.h; sourceTree = "<group>"; };
 		530F007E1CBE23F800798A9E /* TypeDefine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeDefine.m; sourceTree = "<group>"; };
 		53153BD61CC0896D00A84207 /* FileManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManagerTest.m; sourceTree = "<group>"; };
-		53153BD81CC0FCC600A84207 /* MyError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyError.h; sourceTree = "<group>"; };
-		53153BD91CC0FCC600A84207 /* MyError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyError.m; sourceTree = "<group>"; };
 		53392EBC1CC4F26300FC371D /* FileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileManager.h; sourceTree = "<group>"; };
 		53392EBD1CC4F26300FC371D /* FileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileManager.m; sourceTree = "<group>"; };
 		53392EBE1CC4F26300FC371D /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		53392EBF1CC4F26300FC371D /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
-		536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPExistViewController.h; sourceTree = "<group>"; };
-		536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPExistViewController.m; sourceTree = "<group>"; };
-		536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
-		536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAssertHandler.m; sourceTree = "<group>"; };
-		536CC1BF1CBCF21B00E4819C /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
-		536CC1C01CBCF21B00E4819C /* MyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyException.m; sourceTree = "<group>"; };
+		53670EB51CCA0B0C000DE96B /* Question */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Question; sourceTree = "<group>"; };
+		53670EB71CCA0E8A000DE96B /* Algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Algorithm.h; sourceTree = "<group>"; };
+		53670EB81CCA0E8A000DE96B /* Algorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Algorithm.m; sourceTree = "<group>"; };
+		53670EBC1CCA190B000DE96B /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		53670EBF1CCA193F000DE96B /* JSPatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JSPatch.framework; sourceTree = "<group>"; };
+		53670EC11CCA1959000DE96B /* ReadMe_JSPatch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReadMe_JSPatch; sourceTree = "<group>"; };
+		53670EC31CCA19E8000DE96B /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		53670EC81CCA1AEE000DE96B /* JSPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchManager.h; sourceTree = "<group>"; };
+		53670EC91CCA1AEE000DE96B /* JSPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchManager.m; sourceTree = "<group>"; };
+		53670ECB1CCA1E05000DE96B /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = main.js; sourceTree = "<group>"; };
 		537DC03C1CB796070022D3BD /* ExampleTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		537DC03E1CB7983E0022D3BD /* ExampleUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		537DC0401CB79F4B0022D3BD /* SpecialTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialTests.h; sourceTree = "<group>"; };
 		537DC0411CB79F4B0022D3BD /* SpecialTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialTests.m; sourceTree = "<group>"; };
 		537DC0431CB7C0870022D3BD /* XCTest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XCTest; sourceTree = "<group>"; };
-		53B04B9F1CBE4E2B00FDA34E /* CrashHandeler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHandeler.h; sourceTree = "<group>"; };
-		53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashHandeler.m; sourceTree = "<group>"; };
-		53DDC4A31CBB500C00B00590 /* UITestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestViewController.h; sourceTree = "<group>"; };
-		53DDC4A41CBB500C00B00590 /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
-		53DDC4A51CBB500C00B00590 /* UITestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITestViewController.xib; sourceTree = "<group>"; };
+		538C66791D74164D00C2E1FC /* NumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberViewController.h; sourceTree = "<group>"; };
+		538C667A1D74164D00C2E1FC /* NumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberViewController.m; sourceTree = "<group>"; };
+		538C667B1D74164D00C2E1FC /* NumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NumberViewController.xib; sourceTree = "<group>"; };
+		538C66801D74169300C2E1FC /* CrashHandeler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashHandeler.h; sourceTree = "<group>"; };
+		538C66811D74169300C2E1FC /* CrashHandeler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashHandeler.m; sourceTree = "<group>"; };
+		538C66831D74169300C2E1FC /* APPExistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPExistViewController.h; sourceTree = "<group>"; };
+		538C66841D74169300C2E1FC /* APPExistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPExistViewController.m; sourceTree = "<group>"; };
+		538C66851D74169300C2E1FC /* ExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionHandler.h; sourceTree = "<group>"; };
+		538C66861D74169300C2E1FC /* ExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionHandler.m; sourceTree = "<group>"; };
+		538C66871D74169300C2E1FC /* MyAssertHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAssertHandler.h; sourceTree = "<group>"; };
+		538C66881D74169300C2E1FC /* MyAssertHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAssertHandler.m; sourceTree = "<group>"; };
+		538C66891D74169300C2E1FC /* MyError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyError.h; sourceTree = "<group>"; };
+		538C668A1D74169300C2E1FC /* MyError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyError.m; sourceTree = "<group>"; };
+		538C668B1D74169300C2E1FC /* MyException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyException.h; sourceTree = "<group>"; };
+		538C668C1D74169300C2E1FC /* MyException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyException.m; sourceTree = "<group>"; };
+		538C668E1D74169300C2E1FC /* NSException+Process.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSException+Process.h"; sourceTree = "<group>"; };
+		538C668F1D74169300C2E1FC /* NSException+Process.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSException+Process.m"; sourceTree = "<group>"; };
+		538C669E1D7416D500C2E1FC /* UITestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestViewController.h; sourceTree = "<group>"; };
+		538C669F1D7416D500C2E1FC /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
+		538C66A01D7416D500C2E1FC /* UITestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITestViewController.xib; sourceTree = "<group>"; };
+		538C66A31D74172A00C2E1FC /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		538C66A41D74172A00C2E1FC /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		538C66A61D7417E800C2E1FC /* ImageCompressionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCompressionViewController.h; sourceTree = "<group>"; };
+		538C66A71D7417E800C2E1FC /* ImageCompressionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCompressionViewController.m; sourceTree = "<group>"; };
+		538C66A91D7419B300C2E1FC /* ImageCompressionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCompressionViewController.xib; sourceTree = "<group>"; };
+		538C66AB1D741B8500C2E1FC /* XSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XSConfig.h; sourceTree = "<group>"; };
+		538C66AC1D741B8500C2E1FC /* XSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSConfig.m; sourceTree = "<group>"; };
+		538C66AE1D74229200C2E1FC /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		538C66AF1D74229200C2E1FC /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +263,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53670EC41CCA19E8000DE96B /* libz.tbd in Frameworks */,
+				53670EC01CCA193F000DE96B /* JSPatch.framework in Frameworks */,
+				53670EBD1CCA190B000DE96B /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +319,7 @@
 				095D28771BF5882200D2E300 /* UIFoundation */,
 				09B0A3671BFB074700223DA1 /* Animation */,
 				095D28731BF5882200D2E300 /* ThirdParty */,
+				53670EB41CCA0A8F000DE96B /* Algorithm */,
 				095D28B21BF5C0E100D2E300 /* Model */,
 				095D28301BF5840600D2E300 /* Assets.xcassets */,
 				095D28321BF5840600D2E300 /* LaunchScreen.storyboard */,
@@ -329,17 +365,13 @@
 		095D286F1BF5882200D2E300 /* OCFoundation */ = {
 			isa = PBXGroup;
 			children = (
-				53392EBB1CC4F26300FC371D /* FileManager */,
 				095D28701BF5882200D2E300 /* OCFoundationViewController.h */,
 				095D28711BF5882200D2E300 /* OCFoundationViewController.m */,
-				098164871C2E65530077367D /* NumberViewController.h */,
-				098164881C2E65530077367D /* NumberViewController.m */,
-				098164891C2E65530077367D /* NumberViewController.xib */,
-				53DDC4A31CBB500C00B00590 /* UITestViewController.h */,
-				53DDC4A41CBB500C00B00590 /* UITestViewController.m */,
-				53DDC4A51CBB500C00B00590 /* UITestViewController.xib */,
-				53B04B9E1CBE4E0300FDA34E /* Crash */,
-				536CC1B91CBCF21B00E4819C /* Exception */,
+				538C66781D74162600C2E1FC /* Number */,
+				538C667E1D74169300C2E1FC /* KillApp */,
+				538C66771D74157900C2E1FC /* Image */,
+				538C669D1D7416D500C2E1FC /* UITest */,
+				53392EBB1CC4F26300FC371D /* FileManager */,
 			);
 			path = OCFoundation;
 			sourceTree = "<group>";
@@ -347,6 +379,7 @@
 		095D28731BF5882200D2E300 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				53670EBE1CCA193F000DE96B /* JSPatchFramework */,
 				095D28741BF5882200D2E300 /* ThirdPartyViewController.h */,
 				095D28751BF5882200D2E300 /* ThirdPartyViewController.m */,
 				095D28761BF5882200D2E300 /* ThirdPartyViewController.xib */,
@@ -424,6 +457,10 @@
 				0981648D1C2E65CD0077367D /* NSNumber+Price.m */,
 				530F007D1CBE23F800798A9E /* TypeDefine.h */,
 				530F007E1CBE23F800798A9E /* TypeDefine.m */,
+				538C66AB1D741B8500C2E1FC /* XSConfig.h */,
+				538C66AC1D741B8500C2E1FC /* XSConfig.m */,
+				538C66AE1D74229200C2E1FC /* DataUtil.h */,
+				538C66AF1D74229200C2E1FC /* DataUtil.m */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -524,32 +561,97 @@
 			path = FileManager;
 			sourceTree = "<group>";
 		};
-		536CC1B91CBCF21B00E4819C /* Exception */ = {
+		53670EB41CCA0A8F000DE96B /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				536CC1BA1CBCF21B00E4819C /* APPExistViewController.h */,
-				536CC1BB1CBCF21B00E4819C /* APPExistViewController.m */,
-				536CC1BD1CBCF21B00E4819C /* MyAssertHandler.h */,
-				536CC1BE1CBCF21B00E4819C /* MyAssertHandler.m */,
-				536CC1BF1CBCF21B00E4819C /* MyException.h */,
-				536CC1C01CBCF21B00E4819C /* MyException.m */,
-				53153BD81CC0FCC600A84207 /* MyError.h */,
-				53153BD91CC0FCC600A84207 /* MyError.m */,
-				530F007A1CBE169700798A9E /* NSException+Process.h */,
-				530F007B1CBE169700798A9E /* NSException+Process.m */,
-				530F00701CBE151600798A9E /* ExceptionHandler.h */,
-				530F00711CBE151600798A9E /* ExceptionHandler.m */,
+				53670EB51CCA0B0C000DE96B /* Question */,
+				53670EB71CCA0E8A000DE96B /* Algorithm.h */,
+				53670EB81CCA0E8A000DE96B /* Algorithm.m */,
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		53670EBE1CCA193F000DE96B /* JSPatchFramework */ = {
+			isa = PBXGroup;
+			children = (
+				53670EC11CCA1959000DE96B /* ReadMe_JSPatch */,
+				53670EC31CCA19E8000DE96B /* libz.tbd */,
+				53670EBC1CCA190B000DE96B /* JavaScriptCore.framework */,
+				53670EBF1CCA193F000DE96B /* JSPatch.framework */,
+				53670EC81CCA1AEE000DE96B /* JSPatchManager.h */,
+				53670EC91CCA1AEE000DE96B /* JSPatchManager.m */,
+				53670ECB1CCA1E05000DE96B /* main.js */,
+			);
+			path = JSPatchFramework;
+			sourceTree = "<group>";
+		};
+		538C66771D74157900C2E1FC /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				538C66A31D74172A00C2E1FC /* ImageViewController.h */,
+				538C66A41D74172A00C2E1FC /* ImageViewController.m */,
+				538C66A61D7417E800C2E1FC /* ImageCompressionViewController.h */,
+				538C66A71D7417E800C2E1FC /* ImageCompressionViewController.m */,
+				538C66A91D7419B300C2E1FC /* ImageCompressionViewController.xib */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		538C66781D74162600C2E1FC /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				538C66791D74164D00C2E1FC /* NumberViewController.h */,
+				538C667A1D74164D00C2E1FC /* NumberViewController.m */,
+				538C667B1D74164D00C2E1FC /* NumberViewController.xib */,
+			);
+			path = Number;
+			sourceTree = "<group>";
+		};
+		538C667E1D74169300C2E1FC /* KillApp */ = {
+			isa = PBXGroup;
+			children = (
+				538C667F1D74169300C2E1FC /* Crash */,
+				538C66821D74169300C2E1FC /* Exception */,
+			);
+			path = KillApp;
+			sourceTree = "<group>";
+		};
+		538C667F1D74169300C2E1FC /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				538C66801D74169300C2E1FC /* CrashHandeler.h */,
+				538C66811D74169300C2E1FC /* CrashHandeler.m */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		538C66821D74169300C2E1FC /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				538C66831D74169300C2E1FC /* APPExistViewController.h */,
+				538C66841D74169300C2E1FC /* APPExistViewController.m */,
+				538C66851D74169300C2E1FC /* ExceptionHandler.h */,
+				538C66861D74169300C2E1FC /* ExceptionHandler.m */,
+				538C66871D74169300C2E1FC /* MyAssertHandler.h */,
+				538C66881D74169300C2E1FC /* MyAssertHandler.m */,
+				538C66891D74169300C2E1FC /* MyError.h */,
+				538C668A1D74169300C2E1FC /* MyError.m */,
+				538C668B1D74169300C2E1FC /* MyException.h */,
+				538C668C1D74169300C2E1FC /* MyException.m */,
+				538C668E1D74169300C2E1FC /* NSException+Process.h */,
+				538C668F1D74169300C2E1FC /* NSException+Process.m */,
 			);
 			path = Exception;
 			sourceTree = "<group>";
 		};
-		53B04B9E1CBE4E0300FDA34E /* Crash */ = {
+		538C669D1D7416D500C2E1FC /* UITest */ = {
 			isa = PBXGroup;
 			children = (
-				53B04B9F1CBE4E2B00FDA34E /* CrashHandeler.h */,
-				53B04BA01CBE4E2B00FDA34E /* CrashHandeler.m */,
+				538C669E1D7416D500C2E1FC /* UITestViewController.h */,
+				538C669F1D7416D500C2E1FC /* UITestViewController.m */,
+				538C66A01D7416D500C2E1FC /* UITestViewController.xib */,
 			);
-			path = Crash;
+			path = UITest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,15 +761,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53670ECC1CCA1E05000DE96B /* main.js in Resources */,
 				09B0A3981BFB1F9F00223DA1 /* GradientViewController.xib in Resources */,
 				09A1236B1BF9E3CA0084996F /* Questions in Resources */,
 				099A0DCB1C31740C00FFF08E /* TableHeaderViewController.xib in Resources */,
+				53670EB61CCA0B0C000DE96B /* Question in Resources */,
 				09B0A38C1BFB115A00223DA1 /* 核心动画编程指南.pdf in Resources */,
+				538C66A21D7416D500C2E1FC /* UITestViewController.xib in Resources */,
+				538C66AA1D7419B300C2E1FC /* ImageCompressionViewController.xib in Resources */,
 				095D28341BF5840600D2E300 /* LaunchScreen.storyboard in Resources */,
 				096C95431BFCD66F0070BF15 /* Quartz 2D programing 翻译.docx in Resources */,
-				53DDC4A71CBB500C00B00590 /* UITestViewController.xib in Resources */,
-				0981648B1C2E65530077367D /* NumberViewController.xib in Resources */,
 				09A123691BF9E2BE0084996F /* ReadMe in Resources */,
+				53670EC21CCA1959000DE96B /* ReadMe_JSPatch in Resources */,
+				538C667D1D74164D00C2E1FC /* NumberViewController.xib in Resources */,
 				095D28311BF5840600D2E300 /* Assets.xcassets in Resources */,
 				09B0A39D1BFB239A00223DA1 /* PropertySelector.xib in Resources */,
 				096C95421BFCD66F0070BF15 /* drawingwithquartz2d.pdf in Resources */,
@@ -733,32 +839,38 @@
 			files = (
 				09B0A39B1BFB21FB00223DA1 /* PropertySelector.m in Sources */,
 				095D28AD1BF5B1C000D2E300 /* UIColor+Extern.m in Sources */,
+				538C66911D74169300C2E1FC /* APPExistViewController.m in Sources */,
 				09B0A3871BFB074700223DA1 /* AnimateCollectionViewController.m in Sources */,
 				095D28A61BF5AEA800D2E300 /* BaseViewController.m in Sources */,
-				536CC1C11CBCF21B00E4819C /* APPExistViewController.m in Sources */,
+				53670ECA1CCA1AEE000DE96B /* JSPatchManager.m in Sources */,
+				538C66AD1D741B8500C2E1FC /* XSConfig.m in Sources */,
 				53392EC01CC4F26300FC371D /* FileManager.m in Sources */,
 				095D28811BF5882200D2E300 /* UIFoundationViewController.m in Sources */,
-				53153BDA1CC0FCC600A84207 /* MyError.m in Sources */,
 				09B0A3821BFB074700223DA1 /* CircleViewController.m in Sources */,
-				536CC1C31CBCF21B00E4819C /* MyAssertHandler.m in Sources */,
 				099A0DCA1C31740C00FFF08E /* TableHeaderViewController.m in Sources */,
-				53DDC4A61CBB500C00B00590 /* UITestViewController.m in Sources */,
-				530F007C1CBE169700798A9E /* NSException+Process.m in Sources */,
 				53392EC11CC4F26300FC371D /* FileUtil.m in Sources */,
+				538C66A51D74172A00C2E1FC /* ImageViewController.m in Sources */,
 				09B0A3831BFB074700223DA1 /* CoreAnimationUtil.m in Sources */,
 				095D287F1BF5882200D2E300 /* ThirdPartyViewController.m in Sources */,
 				095D287D1BF5882200D2E300 /* OCFoundationViewController.m in Sources */,
-				536CC1C41CBCF21B00E4819C /* MyException.m in Sources */,
 				09B0A3A01BFB390600223DA1 /* PropertySelectorsView.m in Sources */,
+				538C66931D74169300C2E1FC /* MyAssertHandler.m in Sources */,
+				538C66A11D7416D500C2E1FC /* UITestViewController.m in Sources */,
 				095D28871BF5AC4300D2E300 /* MenuViewController.m in Sources */,
 				099A0DC61C3173CD00FFF08E /* HeaderView.m in Sources */,
 				095D28B51BF5C0FE00D2E300 /* SimpleModel.m in Sources */,
 				095D28291BF5840600D2E300 /* AppDelegate.m in Sources */,
 				09B0A3971BFB1F9F00223DA1 /* GradientViewController.m in Sources */,
+				538C66921D74169300C2E1FC /* ExceptionHandler.m in Sources */,
+				538C66971D74169300C2E1FC /* NSException+Process.m in Sources */,
 				095D28CB1BF5D21200D2E300 /* UIBarButtonItem+NaviItem.m in Sources */,
+				53670EB91CCA0E8A000DE96B /* Algorithm.m in Sources */,
+				538C66941D74169300C2E1FC /* MyError.m in Sources */,
+				538C66B01D74229200C2E1FC /* DataUtil.m in Sources */,
+				538C66951D74169300C2E1FC /* MyException.m in Sources */,
+				538C66A81D7417E800C2E1FC /* ImageCompressionViewController.m in Sources */,
 				095D28B11BF5BFC900D2E300 /* BaseTableViewController.m in Sources */,
 				095D28261BF5840600D2E300 /* main.m in Sources */,
-				530F00721CBE151600798A9E /* ExceptionHandler.m in Sources */,
 				09B0A3861BFB074700223DA1 /* ADTickerLabel.m in Sources */,
 				09B0A37E1BFB074700223DA1 /* AnimationViewController.m in Sources */,
 				530F007F1CBE23F800798A9E /* TypeDefine.m in Sources */,
@@ -767,12 +879,12 @@
 				095D28A51BF5AEA800D2E300 /* BaseNavigationViewController.m in Sources */,
 				09B0A3931BFB165C00223DA1 /* GradientView.m in Sources */,
 				09B0A3811BFB074700223DA1 /* CircleView.m in Sources */,
+				538C667C1D74164D00C2E1FC /* NumberViewController.m in Sources */,
 				095D28CE1BF5D42100D2E300 /* SegmentWithColorSlider.m in Sources */,
 				096F93CB1C042F9B00ED87F6 /* QuartZViewController.m in Sources */,
-				53B04BA11CBE4E2B00FDA34E /* CrashHandeler.m in Sources */,
+				538C66901D74169300C2E1FC /* CrashHandeler.m in Sources */,
 				095D28C81BF5D05200D2E300 /* UIDevice+Resolution.m in Sources */,
 				095D28991BF5AE7F00D2E300 /* UITabBarItem+Custom.m in Sources */,
-				0981648A1C2E65530077367D /* NumberViewController.m in Sources */,
 				0981648E1C2E65CD0077367D /* NSNumber+Price.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -909,10 +1021,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XSFoundation/ThirdParty/JSPatchFramework",
+				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XSFoundation/XSFoundation.pch";
 				INFOPLIST_FILE = XSFoundation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangss.foundation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqss.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -922,10 +1038,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XSFoundation/ThirdParty/JSPatchFramework",
+				);
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/XSFoundation/XSFoundation.pch";
 				INFOPLIST_FILE = XSFoundation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhangss.foundation;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qqss.foundation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

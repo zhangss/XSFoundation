@@ -9,6 +9,7 @@
 #import "OCFoundationViewController.h"
 #import "NumberViewController.h"
 #import "APPExistViewController.h"
+#import "ImageViewController.h"
 #import "UITestViewController.h"
 
 @interface OCFoundationViewController ()
@@ -30,6 +31,11 @@
         model = [[SimpleModel alloc] init];
         model.title = @"AppExist";
         model.data = NSStringFromClass([APPExistViewController class]);
+        [self.tableData addObject:model];
+        
+        model = [[SimpleModel alloc] init];
+        model.title = @"Image";
+        model.data = NSStringFromClass([ImageViewController class]);
         [self.tableData addObject:model];
         
         //最后一个

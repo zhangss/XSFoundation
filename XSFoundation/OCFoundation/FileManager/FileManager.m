@@ -714,4 +714,61 @@
     return fileManager;
 }
 
+#pragma mark - iCloud -
++ (BOOL)saveFileToiCloud:(NSString *)filePath
+{
+    /**
+     *
+     Sets the attributes of the specified file or directory.
+     YES if all changes succeed. If any change fails, returns NO, but it is undefined whether any changes actually occurred.
+     Parameters
+     attributes
+     A dictionary containing as keys the attributes to set for path and as values the corresponding value for the attribute. You can set the following attributes: NSFileBusy, NSFileCreationDate, NSFileExtensionHidden, NSFileGroupOwnerAccountID, NSFileGroupOwnerAccountName, NSFileHFSCreatorCode, NSFileHFSTypeCode, NSFileImmutable, NSFileModificationDate, NSFileOwnerAccountID, NSFileOwnerAccountName, NSFilePosixPermissions. You can change single attributes or any combination of attributes; you need not specify keys for all attributes.
+     path
+     The path of a file or directory.
+     error
+     On input, a pointer to an error object. If an error occurs, this pointer is set to an actual error object containing the error information. You may specify nil for this parameter if you do not want the error information.
+     Returns	YES if all changes succeed.
+     */
+    NSError *error = nil;
+    NSFileManager *fm = [NSFileManager defaultManager];
+    NSURL *fileUrl = [NSURL fileURLWithPath:filePath];
+    
+    NSString *fileName = [filePath lastPathComponent];
+    NSString *identifier = @"selfIdentifier";
+    NSURL *ubiquitousContainerURL = [fm URLForUbiquityContainerIdentifier:identifier];
+    NSURL *ubiquitousFileURL = [ubiquitousContainerURL URLByAppendingPathComponent:fileName];
+    
+    /**
+     *  
+     Sets whether the item at the specified URL should be stored in the cloud.
+     YES if the item’s status was updated successfully or NO if an error occurred. If this method returns NO and you specified a value for the errorOut parameter, this method returns an error object in the provided pointer.
+     Parameters
+     flag
+     Specify YES to move the item to iCloud or NO to remove it from iCloud (if it is there currently).
+     url
+     Specify the URL of the item (file or directory) that you want to store in iCloud.
+     destinationURL
+     Moving a file into iCloud Specify the location in iCloud at which to store the file or directory. This URL must be constructed from a URL returned by the URLForUbiquityContainerIdentifier: method, which you use to retrieve the desired iCloud container directory. The URL you specify may contain additional subdirectories so that you can organize your files hierarchically in iCloud. However, you are responsible for creating those intermediate subdirectories (using the NSFileManager class) in your iCloud container directory.
+     Moving a file out of iCloud Specify the location on the local device.
+     errorOut
+     On input, a pointer to variable for an NSError object. If an error occurs, this pointer is set to an NSError object containing information about the error. You may specify nil to ignore the error information.
+     Returns	YES if the item’s status was updated successfully or NO if an error occurred.
+     */
+    BOOL isSuccess = [fm setUbiquitous:YES
+                             itemAtURL:fileUrl
+                        destinationURL:ubiquitousFileURL
+                                 error:&error];
+    if (isSuccess && error == nil)
+    {
+        return isSuccess;
+    }
+    else
+    {
+        NSLog(@"error:%@",error);
+        return NO;
+    }
+}
+
+
 @end

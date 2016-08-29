@@ -294,4 +294,6 @@
  */
 + (NSFileManager *)fileManagerWithDelegate:(id <NSFileManagerDelegate>)delegate;
 
+#pragma mark - iCloud -
+
 @end
