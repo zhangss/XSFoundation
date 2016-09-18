@@ -8,6 +8,7 @@
 
 #import "ImageCompressionViewController.h"
 #import "DataUtil.h"
+#import <ImageIO/ImageIO.h>
 
 @interface ImageCompressionViewController ()
 
@@ -19,7 +20,6 @@
     [super viewDidLoad];
     self.navigationItem.title = @"Image Compression";
     // Do any additional setup after loading the view.
-    
     
     //压缩后的图片保存位置
     NSString *imageCompressionPath = [[XSConfig shareConfig] imageCompressionPath];
@@ -102,5 +102,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)imageEXIF {
+    NSData *imageData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"image_test" ofType:@"jpg"]];
+    CGImageSourceRef imageSource = CGImageSourceCreateIncremental(NULL);
+    CGImageSourceUpdateData(imageSource, (CFDataRef)imageData, YES);
+    CGImageRef imageRef = CGImageSourceCreateImageAtIndex(imageSource, 0, NULL);
+    UIImage *image = [UIImage imageWithCGImage:imageRef];
+}
 
 @end

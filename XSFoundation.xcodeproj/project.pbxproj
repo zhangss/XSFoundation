@@ -101,6 +101,7 @@
 		538C66AA1D7419B300C2E1FC /* ImageCompressionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 538C66A91D7419B300C2E1FC /* ImageCompressionViewController.xib */; };
 		538C66AD1D741B8500C2E1FC /* XSConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66AC1D741B8500C2E1FC /* XSConfig.m */; };
 		538C66B01D74229200C2E1FC /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 538C66AF1D74229200C2E1FC /* DataUtil.m */; };
+		538C66B21D7448C000C2E1FC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538C66B11D7448C000C2E1FC /* ImageIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -256,6 +257,7 @@
 		538C66AC1D741B8500C2E1FC /* XSConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XSConfig.m; sourceTree = "<group>"; };
 		538C66AE1D74229200C2E1FC /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
 		538C66AF1D74229200C2E1FC /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		538C66B11D7448C000C2E1FC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				538C66B21D7448C000C2E1FC /* ImageIO.framework in Frameworks */,
 				53670EC41CCA19E8000DE96B /* libz.tbd in Frameworks */,
 				53670EC01CCA193F000DE96B /* JSPatch.framework in Frameworks */,
 				53670EBD1CCA190B000DE96B /* JavaScriptCore.framework in Frameworks */,
@@ -289,6 +292,7 @@
 		095D28181BF5840600D2E300 = {
 			isa = PBXGroup;
 			children = (
+				538C66B11D7448C000C2E1FC /* ImageIO.framework */,
 				095D28231BF5840600D2E300 /* XSFoundation */,
 				095D283D1BF5840600D2E300 /* XSFoundationTests */,
 				095D28481BF5840600D2E300 /* XSFoundationUITests */,
